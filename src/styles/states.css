@@ -1,0 +1,31 @@
+/* states styles */
+
+.hoverOpacity {
+	transition: .25s;
+}
+
+.hoverOpacity:hover {
+	opacity: 0.8;
+}
+
+@media all and (min-width: 561px) {
+
+	.hoverOpacity:hover {
+		opacity: 0.8;
+	}
+
+	.linkHover:hover {
+		color: #4c4c51;
+	}
+}
+
+@media all and (max-width: 560px) {
+
+	.hoverOpacity:focus {
+		opacity: 0.8;
+	}
+
+	.linkHover:focus {
+		color: #4c4c51;
+	}
+}

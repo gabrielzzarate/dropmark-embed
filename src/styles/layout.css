@@ -1,0 +1,100 @@
+/* layout styles */
+
+.container {
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+.containerCentered {
+	composes: container;
+	text-align: center;
+}
+
+.row {
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.column {
+	box-sizing: border-box;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+.columnHalf {
+	composes: column;
+}
+
+.columnLeft {
+	composes: column;
+	-ms-flex-preferred-size: 175px;
+	flex-basis: 175px;
+	max-width: 175px;
+}
+
+.columnRight {
+	composes: column;
+	text-align: right;
+	-ms-flex-preferred-size: calc(100% - 175px);
+	flex-basis: calc(100% - 175px);
+	max-width: calc(100% - 175px);
+}
+
+@media all and (min-width: 901px) {
+
+	.columnHalf {
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.columnHalf:first-of-type {
+		padding-right: 15px;
+	}
+
+	.columnHalf:nth-of-type(2) {
+		padding-left: 15px;
+	}
+}
+
+@media all and (max-width: 560px) {
+	.columnLeft {
+		-ms-flex-preferred-size: 100px;
+		flex-basis: 100px;
+		max-width: 100px;
+	}
+
+	.columnRight {
+		text-align: right;
+		-ms-flex-preferred-size: calc(100% - 100px);
+		flex-basis: calc(100% - 100px);
+		max-width: calc(100% - 100px);
+	}
+}
+
+
+.alignMiddle {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.fullHeight {
+	height: 100%;
+}

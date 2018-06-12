@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Calibre';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/calibre-regular-webfont.woff2') format('woff2'),
+		url('../fonts/calibre-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Calibre';
+	font-weight: 600;
+	font-style: normal;
+	src: url('../fonts/calibre-semibold-webfont.woff2') format('woff2'),
+		url('../fonts/calibre-semibold-webfont.woff') format('woff');
+}
+
+.calibre {
+	font-family: 'Calibre';
+}
+
+.h1 {
+	font-family: 'Calibre';
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 48px;
+	color: #fff;
+}
+
+.h2 {
+	composes: blackish from './colors.css';
+	font-family: 'Calibre';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.a {
+	composes: blueish from './colors.css';
+	font-size: 22px;
+	line-height: 28px;
+}
+

@@ -1,0 +1,13 @@
+/* Header styles */
+
+header {
+	background: #32383C;
+	height: 60px;
+	line-height: 60px;
+}
+
+svg {
+	display: block;
+    padding-top: 10px;
+    transform: translateY(2px);
+}

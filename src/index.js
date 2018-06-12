@@ -4,13 +4,13 @@ import { render } from 'react-dom';
 import styles from './styles/global.css';
 
 import Header from './components/Header/Header';
-import VideoEmbed from './containers/VideoEmbed';
+import GalleryEmbed from './containers/GalleryEmbed';
 
 const App = () => {
 	return (
 		<div className={styles.global}>
 			<Header />
-			<VideoEmbed />
+			<GalleryEmbed />
 		</div>
 	);
 };

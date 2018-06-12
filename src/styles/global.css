@@ -35,11 +35,12 @@ h1 {
 h2 {
 	font-size: 36px;
 	line-height: 36px;
+	margin: 0;
 }
 
 p {
-	font-size: 22px;
-	line-height: 28px;
+	font-size: 18px;
+	line-height: 20px;
 }
 
 a {
@@ -51,7 +52,7 @@ section, footer {
 	padding: 40px 48px;
 }
 
-@media all and (max-width: 560px) {
+@media all and (max-width: 900px) {
 
 	section, footer {
 		padding: 16px 24px;
